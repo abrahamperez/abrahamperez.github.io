@@ -1,0 +1,44 @@
+<html>
+  <nav>
+  <head>
+    <title>bio</title>
+  </head>
+  <body>
+    <h1>Abraham Perez</h1>
+    <div class="potato">
+      <p1>Interests</p1>
+        <ul>
+          <li>I enjoy the arts</li>
+          <li>I love drawing/painting</li>
+          <li>I adore animals(domestic and none)</li>
+          <li>I like to do math and science</li>
+          <li>I enjoy comedy</li>
+        </ul>
+    </div>
+    <div class="potato">
+      <p2>Academic and Extracurrricular activities</p2>
+       <ul>
+        <li>I attend KIPP college Prep</li>
+        <li>I have a current GPA of 4.18</li>
+        <li>I take a Drama elective class</li>
+        <li>I do at home art projects</li>
+         <li> nominated for NHS</li>
+      </ul>
+    </div>
+    <div class="potato">
+    <p3>Skills</p3>
+     <ul>
+       <li>I can do math very well</li>
+       <li>I'm very organized</li>
+       <li>I have a good scence of productivity</li>
+       <li>I can draw very well (great imagination)</li>
+       <li>I am quite humorous</li>
+      </ul>
+    </div>
+    <ul>
+      <li><a href="url">Instagram</a></li>
+      
+    </ul>
+    
+       </body>
+    </html>
