@@ -25,15 +25,23 @@ for(i in shuffle2){//this is the numbers that will appear on each card
     $('#card_holder').append('<div class="card"><p>'+shuffle2[i]+'</p></div>');
   }
   
-  $("div.card"). click(function(){
-    var mynum=0;
-    var firstcard,secondcard;
-    $(this).find('p').css("opacity","1");
-    if(!onfirstclick){
-      //compare cards
-    }else{
-    firstcard=$(this).find('p').html
-  }
+  $("div.card").click(function(){
+    if(click_count == 0){
+      $(this).find('p').css("opacity","1");
+      first_guess=$(this).find('p').html();
+      click_count = 1;
+    }
+    else{
+      
+    }
+  //   var mynum=0;
+  //   var firstcard,secondcard;
+    
+  //   if(!onfirstclick){
+  //     //compare cards
+  //   }else{
+    
+  // }
     
   });
 });
