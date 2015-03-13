@@ -4,17 +4,25 @@ $(document).ready(function(){
   var second_guess=0;
   var first_card=0;//these are variables that will compare the numbers
   var card_array = ["1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10"];
-  function suffle(array){
-    var currentindex=array.length,temporaryvalue,randomindex;
-    //shuffles elements...
-    while(0 !==currentindex){
-      //picks a remainging element
-      randomindex= Math.floor(Math.random() * currentindex):
-      currentindex-=1;
+  
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+    // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+    // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
     }
+    return array;
   }
-for(i in card_array){//this is the numbers that will appear on each card
-    $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
+  
+  var shuffle2 = shuffle(card_array);
+for(i in shuffle2){//this is the numbers that will appear on each card
+    $('#card_holder').append('<div class="card"><p>'+shuffle2[i]+'</p></div>');
   }
   
   $("div.card"). click(function(){
@@ -28,4 +36,4 @@ for(i in card_array){//this is the numbers that will appear on each card
   }
     
   });
-  });
+});
