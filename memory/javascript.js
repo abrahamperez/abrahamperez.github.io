@@ -27,12 +27,20 @@ for(i in shuffle2){//this is the numbers that will appear on each card
   
   $("div.card").click(function(){
     if(click_count == 0){
-      $(this).find('p').css("opacity","1");
+      $(this).find('p').css("opacity","1").addClass('potato');
       first_guess=$(this).find('p').html();
       click_count = 1;
     }
     else{
-      
+      $(this).find('p').css("opacity","1").addClass('potato');
+      second_guess=$(this).find('p').html();
+      click_count = 0;
+      if(first_guess == second_guess){
+        $('.potato').css('color', 'blue').removeClass('potato');
+      }
+      else{
+        $('.potato').css('opacity', 0).removeClass('potato');
+      }
     }
   //   var mynum=0;
   //   var firstcard,secondcard;
