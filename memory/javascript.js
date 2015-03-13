@@ -39,7 +39,7 @@ for(i in shuffle2){//this is the numbers that will appear on each card
         $('.potato').css('color', 'blue').removeClass('potato');
       }
       else{
-        $('.potato').css('opacity', 0).removeClass('potato');
+        setTimeout(function(){$('.potato').css('opacity', 0).removeClass('potato')}, 1000);
       }
     }
   //   var mynum=0;
