@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('button').on('click', function(){
-    var iteams=$('imput').val();
-    $("div").append('<p>'+"iteam"+'</p>')
+    var items=$('input').val();
+    $("div").append('<p>'+"item"+'</p>')
   });
 })
