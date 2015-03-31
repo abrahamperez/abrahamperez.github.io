@@ -4,15 +4,20 @@ $(document).ready(function(){
 {
    return Math.floor(Math.random()*(max-min+1)+min);
 }
+var compnum= mynum(1,100)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-   mynum(1,100)
+   var usersguess= $('input').val();
     //save their guess as a variable
     
     
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
-    
+    if (usersguess===compnum)
+    {
+     alert("you win")
+    }
+    else if(usersguess<compnum)
       //what happens if the guess is correct?
       
     //if the user guessed too high...
