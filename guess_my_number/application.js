@@ -22,7 +22,7 @@ console.log(compNum)
     {
      alert("too low")
     }
-    else(usersGuess>compNum)
+    else
     {
      alert("too high")
     }
