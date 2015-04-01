@@ -18,6 +18,13 @@ var compnum= mynum(1,100)
      alert("you win")
     }
     else if(usersguess<compnum)
+    {
+     alert("too low")
+    }
+    else(usersguess>compnum)
+    {
+     alert("too high")
+    }
       //what happens if the guess is correct?
       
     //if the user guessed too high...
