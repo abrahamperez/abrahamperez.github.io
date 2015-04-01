@@ -7,7 +7,7 @@ $(document).ready(function(){
 var compnum= mynum(1,100)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-   var usersguess= $ parseInt(('input').val();
+   var usersguess=parseInt $('input').val();
     //save their guess as a variable
     
     
