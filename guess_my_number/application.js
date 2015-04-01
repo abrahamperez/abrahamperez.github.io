@@ -1,5 +1,7 @@
 $(document).ready(function(){
+ 
  //find a way for the program to choose a random number between 1 and 100, save this as a variable
+ 
  var mynum=function randomIntFromInterval(min,max)
 {
    return Math.floor(Math.random()*(max-min+1)+min);
