@@ -8,7 +8,7 @@ var compnum= mynum(1,100)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
    var usersguess= parseInt($('input').val());
-    //save their guess as a variable
+    }//save their guess as a variable
     
     
     //and compare this guess to the random number that the computer picked
