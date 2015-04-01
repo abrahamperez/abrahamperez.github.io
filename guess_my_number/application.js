@@ -4,10 +4,11 @@ $(document).ready(function(){
 {
    return Math.floor(Math.random()*(max-min+1)+min);
 }
-var compnum= mynum(1,100)
+var compNum= mynum(1,100);
+console.log(compNum)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-   var usersGuess=parseInt ($('input').val());
+   var usersGuess=parseInt($('input').val());
     //save their guess as a variable
     
     
