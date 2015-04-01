@@ -7,21 +7,21 @@ $(document).ready(function(){
 var compnum= mynum(1,100)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-   var usersguess=parseInt ($('input').val());
+   var usersGuess=parseInt ($('input').val());
     //save their guess as a variable
     
     
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
-    if (usersguess===compnum)
+    if (usersGuess===compNum)
     {
      alert("you win")
     }
-    else if(usersguess<compnum)
+    else if(usersGuess<compNum)
     {
      alert("too low")
     }
-    else(usersguess>compnum)
+    else(usersGuess>compNum)
     {
      alert("too high")
     }
