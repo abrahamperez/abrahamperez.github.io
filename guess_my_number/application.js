@@ -1,6 +1,7 @@
 $(document).ready(function(){
  
  //find a way for the program to choose a random number between 1 and 100, save this as a variable
+ var guessNum=0
  
  var mynum=function randomIntFromInterval(min,max)
 {
@@ -11,8 +12,9 @@ console.log(compNum)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
    var usersGuess=parseInt($('input').val());
+   guessNum= guesNum + 1;
     //save their guess as a variable
-    
+   
     
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
