@@ -12,7 +12,7 @@ console.log(compNum)
 //when the player clicks on the 'guess' button
   $('button').on('click', function(){
    var usersGuess=parseInt($('input').val());
-   guessNum= guesNum + 1;
+   guessNum= guessNum + 1;
     //save their guess as a variable
    
     
