@@ -16,7 +16,24 @@ def move_forward(feet):
   fwd()
   time.sleep(3 * feet)
 
-def right():
-  enc_tgt(1, 0, steps)
+def turnright():
+  enc_tgt(1, 0, 14 steps)
   time.sleep(.1)
+  right()
+  time.sleep(.1)
+  
+def turnleft():
+  enc_tgt(0, 1, 14 steps)
+  time.sleep(.1)
+  left()
+  time.sleep(.1)
+
+move_forward(3)
+turnright()
+move_forward(914.4)
+turnright()
+move_forward(609.6)
+turnright()
+move_forward(1219.2)
+
   
